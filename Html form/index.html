@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div style="width: 30%; ">
+       <form action="">
+    <fieldset >
+        <legend style="text-align: center;">Register form</legend>
+   
+      <div>
+          <label for="name">First Name</label>
+          <br/>
+        <input type="text"
+         name="name"
+          id="name"
+           maxlength="5" 
+           placeholder="Enter Your First Name"
+             maxlength="5"
+            pattern="[A-Za-z]+"
+               required>
+  
+      </div> 
+       <br/>   
+    <div>
+          <label for="email">Email</label>
+           <br/>
+        <input 
+        type="email" 
+        name="email" 
+        id="email" 
+        placeholder="Enter Your Email ex: shrouk@gmail.com"
+        required>
+  
+      </div> 
+         <br/> 
+       <div>
+          <label for="phone">Phone</label>
+           <br/>
+        <input type="text"
+         name="phone"
+          id="phone"
+           placeholder="Enter Your phone ex: 01128978724"
+             pattern="01(0|1|2|5)[0-9]{8}"
+               maxlength="11"
+               required>
+               
+  
+      </div> 
+         <br/>   
+    <div>
+        <label for="file">Upload Image:</label><br>
+        <input type="file"
+               id="file"
+               name="file"
+               accept=".png"
+               required>
+    </div>
+       <br/>  
+    <div>
+         <label for="course">Courses:</label><br>
+        <input list="courses" id="course" name="course">
+
+         <datalist id="courses">
+            <option value="HTML">
+            <option value="CSS">
+            <option value="JavaScript">
+            <option value="Bootstrap">
+            <option value="React">
+        </datalist>
+    </div>
+       <br/>   
+    <div>
+        <label for="date">Date</label>
+        <br>
+        <input type="date" id="date" name="date" required>
+    </div>
+          <br/>
+   <div>
+    <label for="gendar">Gendar</label>
+    <br>
+    <label for="male">Male</label>
+   <input type="radio" name="gendar" id="male">
+   <label for="female">Female</label>
+   <input type="radio" name="gendar" id="female">
+   
+   </div>
+      <br/>   
+   <div>
+    <label>Tracks:</label><br>
+
+        <input type="checkbox" id="front" name="front">
+        <label for="front" >Front-End</label><br>
+
+        <input type="checkbox" id="back" name="back">
+        <label for="back">Back-End</label><br>
+
+        <input type="checkbox" id="full" name="full">
+        <label for="full">Full-Stack</label>
+   </div>
+         <br/>
+         <div>
+             <label for="range" >Range (100 - 200 )</label><br>
+
+        <input type="range" id="range" name="range" max="200" min="100">
+      
+         </div>
+          <br/>
+   <div>
+   
+     <label for="comment">Comment:</label><br>
+        <textarea id="comment"
+                  name="comment"
+                  pattern="[A-Za-z ]+"
+                  required
+                  cols="38"
+                  rows="5">
+                </textarea>
+   </div>
+      <br/>  
+   <div>
+    <button type="submit">Submit</button>
+   </div>
+        <br/>
+    </fieldset>
+     </form>
+  </div>
+</body>
+</html>
