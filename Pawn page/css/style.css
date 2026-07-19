@@ -1,0 +1,149 @@
+nav{
+    background-color:rgb(25, 25, 26) ;
+}
+
+.home{
+    background-image: url('../img/WhatsApp\ Image\ 2026-07-16\ at\ 12.59.35\ AM.jpeg');
+    background-size: cover;
+    height: 650px;
+}
+.card{
+    width: 300px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: .5s;
+}
+
+/* Overlay */
+
+.overlay{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.55);
+    color: #fff;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .6s ease;
+}
+
+/* السعر والقلب */
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .4s;
+}
+
+.top span{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.top i{
+    font-size: 24px;
+}
+
+/* المحتوى */
+
+.content{
+    text-align: center;
+
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .4s;
+}
+
+.content h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.content p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* الأزرار */
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .4s;
+}
+
+.btns button{
+    border: none;
+    background: #1d2b64;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btns button:hover{
+    background: #3146a5;
+}
+
+/* Hover */
+
+.card:hover img{
+    transform: scale(1.08);
+}
+
+.card:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover .top{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .15s;
+}
+
+.card:hover .content{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .3s;
+}
+
+.card:hover .btns{
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .45s;
+}
+.active{
+  color: white;
+    
+}
+.w-80{
+    width: 93%;
+}
